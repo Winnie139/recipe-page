@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Young Serif', sans-serif;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    max-width: 600px;
+    padding: 30px;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+h1{
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+p, li{
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.recipe{
+    margin-bottom: 10px;
+}
+
+h4{
+    color: hsl(332, 51%, 32%);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+article{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.prep{
+    padding-left: 30px;
+    letter-spacing: 2px;
+    list-style-position: inside;
+}
+
+.prep li{
+    margin-bottom: 5px;
+}
+
+.prep li::marker{
+    font-size: 0.8em;
+}
+h2{
+    font-weight: lighter;
+    margin-bottom: 10px;
+    color: hsl(14, 45%, 36%);
+    padding-top: 15px;
+}
+
+.list{
+    padding-bottom: 15px;
+    margin-left: 20px;
+    
+    list-style-type: disc;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    display: block;
+    width: 100%;
+}
+
+.list li{
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.list li::marker{
+    color: hsl(14, 45%, 36%);
+    font-size: 0.8em;
+}
+
+.lists{
+    padding-bottom: 15px;
+    margin-left: 20px;
+    
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.lists li{
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.list li, .lists li {
+    padding-bottom: 5px; /* Adds space inside the list before the border */
+}
+
+
+.lists li::marker{
+    color: hsl(14, 45%, 36%);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.nutrition{
+    margin-bottom: 10px;
+}
+
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    
+}
+.nutrition-table th, .nutrition-table td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 8px;
+    text-align: left;
+    width: 50%;
+}
+.nutrition-table th {
+    background: #ddd;
+}
+.bold {
+    font-weight: bold;
+}
+.color{
+    color: hsl(14, 45%, 36%);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 90%; 
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p, li {
+        font-size: 14px; 
+    }
+
+    .nutrition-table th, .nutrition-table td {
+        padding: 6px; 
+    }
+}
+
+/* 💻 Large Screens (Desktop) */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 800px; 
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p, li {
+        font-size: 16px;
+    }
+
+    .nutrition-table th, .nutrition-table td {
+        padding: 10px;
+    }
+}
